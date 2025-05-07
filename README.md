@@ -1,4 +1,102 @@
+# API call example with JavaScript to Clarifai General Image Recognition
 
+## Information
+[NTI X Hub AI] Hub GenAI for Future Founders: Week 2 - Exercise 2.2
+
+Name: **Hoang Tran Nhat Minh**
+
+GitHub repository: https://github.com/htnminh/api-call-js-example
+
+## Preview
+```
+Waiting 1 second before next request...
+Waiting 1 second before next request...
+Waiting 1 second before next request...
+===========================================================================
+Image recognition with Clarifai
+
+Image URL: https://samples.clarifai.com/metro-north.jpg
+Model ID: general-image-recognition
+Model version ID: aa7f35c01e0642fda5cf400f543e7c40
+
+Confidence (%)   Concept
+--------------   -------
+         99.96   train
+         99.93   railway
+         99.83   subway system
+         99.80   station
+         99.73   locomotive
+         99.70   transportation system
+         98.90   travel
+         98.09   commuter
+         98.07   platform
+         97.43   light
+         96.89   train station
+         96.73   blur
+         96.16   city
+         96.14   road
+         96.04   urban
+         95.99   traffic
+         94.77   street
+         93.43   public
+         93.22   tramway
+         92.94   business
+
+Waiting 1 second before next request...
+===========================================================================
+Image recognition with Clarifai
+
+Image URL: https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba
+Model ID: general-image-recognition
+Model version ID: aa7f35c01e0642fda5cf400f543e7c40
+
+Confidence (%)   Concept
+--------------   -------
+         99.98   cat
+         99.50   kitten
+         99.48   cute
+         99.14   whisker
+         98.78   eye
+         98.69   animal
+         98.47   pet
+         98.47   fur
+         98.16   curiosity
+         97.82   funny
+         96.56   mammal
+         96.23   little
+         95.85   sit
+         95.22   portrait
+         91.68   one
+         91.61   looking
+         91.57   downy
+         91.15   no person
+         91.10   domestic
+         90.29   young
+```
+
+## How to run
+1. Register an account on [Clarifai](https://clarifai.com/) and get your own Personal Access Token (PAT).
+
+2. Create an `.env` file in the root directory:
+```
+CLARIFAI_PAT=<your_clarifai_pat>
+```
+
+3. Modify the [api_call_example.js](api_call_example.js) file to use your own configuration. That part is currently like this:
+```javascript
+const USER_ID = 'nhatminh2';       
+const APP_ID = 'hub-gen-ai';
+```
+
+4. (Optional) Modify the [image_urls.txt](image_urls.txt) file to use your own image URLs.
+
+5. Run:
+```
+npm install  # once
+npm start
+```
+
+## Prompts
 ```
 leave @_example.js  as is. in @api_call_example.js , do the following:
 - follow the example
