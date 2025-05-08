@@ -97,6 +97,7 @@ npm start
 ```
 
 ## Prompts
+Cursor (Agent mode) with Claude 3.7 Sonnet.
 ```
 leave @_example.js  as is. in @api_call_example.js , do the following:
 - follow the example
